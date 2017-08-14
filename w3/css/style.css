@@ -1,0 +1,87 @@
+
+a:hover {
+  color: #fcfcfc;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+/*#userPLink {
+  position: relative;
+}*/
+  #sideMenu {
+  margin: 0 10px 0 0;
+  text-shadow: 1px 1px 2px #212121;
+} 
+#userMenuToggle {
+  position: absolute;
+  right: 0;
+}
+ul#userMenu {
+  background: #202020;
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 0;
+}
+#userMenu li {
+  display: block;
+  padding: 5px 10px;
+  text-align: left;
+  width: 150px;
+}
+ul#userMenu li a::after {
+  content: attr(title);
+}
+#userMenu li a:hover, #sideMenuContainer > a:hover {
+  padding-left: 3px
+}
+
+#scrollingNews {
+  color: #fcfcfc;
+}
+
+#sideMenu {
+  color: #d4a132;
+  float: right;
+  z-index: 5;
+}
+#sideMenuContainer {
+  /*background: #202020;*/
+  height: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 100px;
+  right: -200px;
+  width: 200px;
+  z-index: 4;
+}
+#sideMenuContainer a{
+  color: #d4a132;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #8a8a8a;
+  text-decoration: none;
+  -moz-transition: 0.1s all ease-in-out;
+  -o-transition: 0.1s all ease-in-out;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+
+#sideMenuContainer h2 {
+  color: #fcfcfc;
+  font: 16px 'PT Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#sideMenuContainer > a {
+  display: block;
+  padding: 15px 10px;
+}
+
